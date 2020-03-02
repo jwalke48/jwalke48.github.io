@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href = "Stylesheet.css">
+    <meta charset="utf-8">
+    <title>John Walker</title>
+  </head>
+  <body>
+    <h1>
+      <p class = "titleText"> John Walker's Portfolio </p>
+      <div class = "jawnPicturePosition">
+        <img class = "jawnPicture", src = "image0.jpg" alt = "John Walker">
+      </div>
+    </h1>
+    <h2>
+      <p class = "subText">3D Character Animator, Motion Graphics Artist, Generally Adorable Geek</p>
+      <p class = "softwareListTitle"> Software Used </p>
+        <ul class = "softwareList">
+          <li> Blender </li>
+          <li> After Effects </li>
+          <li> Premiere </li>
+        </ul>
+    </h2>
+    <h3>
+      <div class = "slideShowPosition">
+      <img class = "slideShow" src = "Slideshow_1.png">
+      <img class = "slideShow" src = "Slideshow_2.png">
+      <img class = "slideShow" src = "Slideshow_3.png">
+      </div>
+      <div class = "buttonPosition">
+      <button class = "button" onclick = "minusSlides()"> Previous </button>
+      <button class = "button" onclick = "index1()" > 1 </button>
+      <button class = "button" onclick = "index2()" > 2 </button>
+      <button class = "button" onclick = "index3()" > 3 </button>
+      <button class = "button" onclick = "plusSlides()" > Next </button>
+    </div>
+    </h3>
+  </body>
+  <script>
+  var slideIndex = 1;
+  moveSlides();
+  function minusSlides() {
+    moveSlides(slideIndex -= 1);
+  }
+  function plusSlides() {
+    moveSlides(slideIndex += 1);
+  }
+  function index1(){
+    moveSlides(slideIndex = 1);
+  }
+  function index2(){
+    moveSlides(slideIndex = 2);
+  }
+  function index3(){
+    moveSlides(slideIndex = 3);
+  }
+  function moveSlides() {
+    var slide = document.getElementsByClassName("slideShow");
+    if (slideIndex > 3) {
+      slideIndex = 1
+    }
+    if (slideIndex < 1) {
+      slideIndex = 3
+    }
+    for (i = 0; i < 3; i++) {
+      slide[i].style.display = "none";
+    }
+    slide[slideIndex - 1].style.display = "block";
+  }
+  </script>
+</html>

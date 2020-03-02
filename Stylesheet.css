@@ -1,0 +1,102 @@
+body {
+  background-color: lightblue;
+  border-style:solid;
+  border-color: navy;
+}
+
+h1 {
+  font-size: 150px;
+  color: navy;
+}
+
+h2{
+  position: relative;
+}
+
+.jawnPicturePosition{
+  position: relative;
+  left: 790px;
+  bottom: 478px;
+
+}
+
+.jawnPicture{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style:solid;
+  width: 300px;
+  height: auto;
+}
+
+.titleText{
+  border-bottom-style: solid;
+  text-shadow: 2px 2px rgba(255, 255, 255, 1);
+}
+
+.subText{
+  font-size: 45px;
+  color: navy;
+  text-shadow: 2px 2px rgba(255, 255, 255, 1);
+  position:relative;
+  bottom: 650px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.softwareListTitle{
+  font-size: 35px;
+  color: navy;
+  position: relative;
+  bottom: 675px;
+  left: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: navy;
+}
+
+.softwareList{
+list-style-type: none;
+font-size: 25px;
+color: navy;
+position: relative;
+bottom: 700px;
+text-align: center;
+}
+
+.slideShowPosition{
+  position: relative;
+  bottom: 650px;
+}
+
+.slideShow{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height:auto;
+  border-style: inset;
+  border-color: dodgerblue;
+  border-width: 30px;
+  animation:fade 2s }
+
+@keyframes fade {
+  0%{opacity:0}
+  100%{opacity:1}
+}
+
+.buttonPosition{
+  position: relative;
+  bottom:645px;
+  text-align: center;
+}
+
+.button{
+  background-color: dodgerblue;
+  font-size: 50px;
+  border: 15px;
+}
+
+button:hover{
+  background: rgb(51,200,255)
+}
